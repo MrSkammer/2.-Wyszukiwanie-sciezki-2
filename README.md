@@ -3,9 +3,9 @@
 
 Spis treści:
 
-1.Opis klasy ShortestPath
-2.Konstruktor ShortestPath
-3.Metoda findPath()
+1.Opis klasy ShortestPath 
+2.Konstruktor ShortestPath 
+3.Metoda findPath() 
 4.Metoda main()
 
 
