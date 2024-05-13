@@ -23,7 +23,17 @@ public class ShortestPath {
             totalSum += shortest; 
             finall += shortest + ", "; 
         }
+
         System.out.println("Grid dimensions: " + rows + "x" + cols);
+
+        System.out.println("Grid:");
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                System.out.print(grid[i][j] + " ");
+            }
+            System.out.println();
+        }
+
         System.out.println("Lowest number in each column: " + finall);
         return new int[]{totalSum};
     }
