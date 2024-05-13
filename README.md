@@ -9,30 +9,39 @@ Spis treści:
 4.Metoda main() .
 
 
-Opis klasy ShortestPath:
+Klasa ShortestPath:
 
-- Klasa ShortestPath zawiera implementację algorytmu znajdowania najkrótszej ścieżki dwuwymiarowej siatce liczb.
+- Jest to klasa Java, która zawiera implementację algorytmu znajdującego najkrótszą ścieżkę w dwuwymiarowej tablicy liczb.
+Składa się z pól danych, konstruktora oraz metody służącej do znalezienia najkrótszej ścieżki.
 
-___________________________________________________________________________________________
-Konstruktor ShortestPath:
+_______________________________________________________________________________________________________________________________________________________________________________________
 
-Metoda: ShortestPath(int[][] grid)
+Pola danych:
 
-- Konstruktor przyjmuje dwuwymiarową siatkę liczb jako argument i inicjalizuje pola grid, rows i cols.
+- grid: Dwuwymiarowa tablica liczb reprezentująca siatkę, na której szukamy najkrótszej ścieżki.
+- rows: Liczba wierszy w tablicy grid.
+- cols: Liczba kolumn w tablicy grid.
 
-___________________________________________________________________________________________
+_______________________________________________________________________________________________________________________________________________________________________________________
+
+Konstruktor ShortestPath(int[][] grid):
+
+- Konstruktor inicjalizuje obiekt ShortestPath daną dwuwymiarową tablicą liczb grid, ustawiając odpowiednio pola rows i cols.
+
+_______________________________________________________________________________________________________________________________________________________________________________________
+
 Metoda findPath():
 
-Metoda: findPath()
+- Metoda ta szuka najkrótszej ścieżki w tablicy grid, zwracając sumę najmniejszych wartości w każdej kolumnie.
+Iteruje po kolumnach i dla każdej kolumny znajduje najmniejszą wartość, sumując je.
+Wyświetla wymiary tablicy oraz zawartość tablicy, a także najmniejsze wartości z każdej kolumny.
 
-- Metoda znajduje najmniejszą liczbę w każdej kolumnie siatki i sumuje je. Zwraca sumę oraz wyświetla wymiary siatki oraz najmniejszą liczbę w każdej kolumnie.
+_______________________________________________________________________________________________________________________________________________________________________________________
 
-___________________________________________________________________________________________
-Metoda main():
+Metoda main(String[] args):
 
-Metoda: main(String[] args)
-
-- Metoda główna programu, tworzy obiekt ShortestPath z podaną siatką liczb, wywołuje metodę findPath() i wyświetla sumę najmniejszych liczb oraz sumę wszystkich przebytych liczb.
+- Metoda główna programu, która tworzy obiekt klasy ShortestPath z przykładową tablicą liczb grid.
+Wywołuje metodę findPath() na tym obiekcie, aby znaleźć najkrótszą ścieżkę, a następnie wyświetla sumę najmniejszych wartości w kolumnach.
 
 ___________________________________________________________________________________________
 Program nie potrzebuje żadnych paczek ani plików. Wszystko dzieje się w konsoli
